@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Личный сайт-портфолио Александра Сухенко. HTML, CSS, Python, интересы и контакты.">
+    <meta name="description" content="Личный сайт-портфолио Александра Сухенко. HTML, CSS, Python, интересы и контакты.">
     <meta name="author" content="Александр Сухенко">
     <meta name="keywords" content="портфолио, Александр Сухенко, программист, HTML, CSS, Python, 1С, база данных">
 
@@ -14,17 +13,17 @@
 </head>
 
 <body>
-    <div class="Container">
+    <div class="container">
         <header class="main-header">
             <div class="main-logo">
                 <img src="img/main-logo.svg" alt="Александр Сухенко" width="60" height="60">
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li class="main-nav__item"><a href="#about">Обо мне</a></li>
-                    <li class="main-nav__item"><a href="#skills">Навыки</a></li>
-                    <li class="main-nav__item"><a href="#interests">Интересы</a></li>
-                    <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#interests">Интересы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,67 +35,48 @@
                     <p>Программист</p>
                 </div>
                 <div class="intro-photo">
-                    <img src="img/my_photo.jpg" alt="Александр Сухенко" width="160" height="160">
+                    <img src="img/my_photo.jpg" alt="Александр Сухенко" width="400" height="400">
                 </div>
             </div>
         </section>
 
         <section class="section-about" id="about">
-            <h2 class="about-title">Пара слов обо мне</h2>
+            <h2>Пара слов обо мне</h2>
             <div class="about-text">
                 <p>Привет 👋</p>
-                <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и
-                    вычислительная техника».</p>
+                <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычислительная техника».</p>
                 <p>В прошлом году защитил диплом бакалавра на тему «Исследование методов сжатия временных рядов».</p>
-                <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, но в будущем планирую стать
-                    разработчиком сложных программных комплексов и систем.</p>
+                <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
             </div>
         </section>
 
         <section class="section-skills" id="skills">
             <div class="skills-header">
-                <h2 class="skills-title">Мои навыки</h2>
+                <h2>Мои навыки</h2>
                 <div class="skills-sort">
-                    <span>Сортировать</span>
+                    <span>Сортировать:</span>
                     <button type="button">по названию</button>
                     <button type="button">по уровню</button>
                 </div>
             </div>
 
             <dl class="skills-list">
-                <dt>
-                    <img src="img/html.svg" alt="HTML" class="skill-icon"> HTML
-                </dt>
-                <dd>
-                    <div class="skill-fill" style="width: 60%;">60%</div>
-                </dd>
+                <dt class="skill skill-html">HTML</dt>
+                <dd><div class="skill-fill" style="width: 60%;">60%</div></dd>
 
-                <dt>
-                    <img src="img/css.svg" alt="CSS" class="skill-icon"> CSS
-                </dt>
-                <dd>
-                    <div class="skill-fill" style="width: 70%;">70%</div>
-                </dd>
+                <dt class="skill skill-css">CSS</dt>
+                <dd><div class="skill-fill" style="width: 70%;">70%</div></dd>
 
-                <dt>
-                    <img src="img/python.svg" alt="Python" class="skill-icon"> Python
-                </dt>
-                <dd>
-                    <div class="skill-fill" style="width: 80%;">80%</div>
-                </dd>
+                <dt class="skill skill-python">Python</dt>
+                <dd><div class="skill-fill" style="width: 80%;">80%</div></dd>
 
-                <dt>
-                    <img src="img/c++.svg" alt="C++" class="skill-icon"> C++
-                </dt>
-                <dd>
-                    <div class="skill-fill" style="width: 55%;">55%</div>
-                </dd>
+                <dt class="skill skill-cpp">C++</dt>
+                <dd><div class="skill-fill" style="width: 55%;">55%</div></dd>
             </dl>
         </section>
 
-
         <section class="section-interests" id="interests">
-            <h2 class="interests-title">Мои интересы</h2>
+            <h2>Мои интересы</h2>
             <div class="interests-text">
                 <p>Наибольший интерес для меня в данный момент представляет программирование 1С и базы данных.</p>
                 <p>Но помимо учёбы и работы я также люблю ходить в зал и читать зарубежную классику.</p>
@@ -104,27 +84,25 @@
         </section>
 
         <section class="section-contacts" id="contacts">
-            <h2 class="contacts-title">Мои контакты</h2>
+            <h2>Мои контакты</h2>
             <div class="contacts-list">
-                <p>
-                    <img src="img/phone.svg" alt="Телефон" class="contact-icon">
+                <p class="contact-item phone">
                     <a href="tel:+79778724795">+7 977 872-47-95</a>
                 </p>
-                <p>
-                    <img src="img/email.svg" alt="Почта" class="contact-icon">
+                <p class="contact-item email">
                     <a href="mailto:suhaldos@gmail.com">suhaldos@gmail.com</a>
                 </p>
-                <ul class="social">
-                    <li><a href="#"><img src="img/git1.svg" alt="GitHub"></a></li>
-                    <li><a href="#"><img src="img/git2.svg" alt="GitLab"></a></li>
-                    <li><a href="#"><img src="img/telegram1.svg" alt="Telegram"></a></li>
-                    <li><a href="#"><img src="img/inst1.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="img/vk1.svg" alt="VK"></a></li>
+                <ul class="social-list">
+                    <li class="social-item github"><a href="#">GitHub</a></li>
+                    <li class="social-item gitlab"><a href="#">GitLab</a></li>
+                    <li class="social-item telegram"><a href="#">Telegram</a></li>
+                    <li class="social-item instagram"><a href="#">Instagram</a></li>
+                    <li class="social-item vk"><a href="#">VK</a></li>
                 </ul>
             </div>
         </section>
 
-        <footer>
+        <footer class="main-footer">
             <p>© 2025 Александр Сухенко</p>
         </footer>
     </div>
