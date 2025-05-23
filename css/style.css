@@ -159,12 +159,13 @@ li {
 
 
 .container {
-  min-width: 320px;
+  min-width: none;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 .main-footer {
+  width: 100%;
   color: var(--bg-color);
   background: var(--txt-color);
   padding: 18px 0 10px 0;
@@ -172,6 +173,7 @@ li {
   font-size: 18px;
   margin-top: 48px;
 }
+
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -193,7 +195,7 @@ body {
 .main-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 32px;
 }
 .main-logo img {
@@ -206,6 +208,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 .main-nav a {
   display: inline-block;
