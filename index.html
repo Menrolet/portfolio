@@ -1,137 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио — Сухенко Александр</title>
-    <meta name="description" content="Личный сайт-портфолио Александра Сухенко. HTML, CSS, Python, интересы и контакты.">
-    <meta name="author" content="Александр Сухенко">
-    <meta name="keywords" content="портфолио, Александр Сухенко, программист, HTML, CSS, Python, 1С, база данных">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Личный сайт-портфолио Александра Сухенко. HTML, CSS, Python, интересы и контакты.">
+  <meta name="author" content="Александр Сухенко">
+  <meta name="keywords" content="портфолио, Александр Сухенко, программист, HTML, CSS, Python, 1С, база данных">
+  <title>Портфолио — Сухенко Александр</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="main-header">
-            <div class="main-logo">
-                <img src="img/main-logo.svg" alt="Александр Сухенко" width="60" height="60">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#skills">Навыки</a></li>
-                    <li><a href="#interests">Интересы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
+  <div class="container">
+    <header class="main-header">
+      <div class="main-logo">
+        <img src="img/main-logo.svg" alt="Александр Сухенко" width="60" height="60">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#interests">Интересы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-            <section class="section-intro">
-                <div class="intro-content">
-                    <div class="intro-title">
-                        <h1>Александр Сухенко</h1>
-                        <p class="subtitle">Программист</p>
-                    </div>
-                    <div class="intro-photo">
-                        <img src="img/my_photo.jpg" alt="Александр Сухенко" width="400" height="400">
-                    </div>
-                </div>
-            </section>
+    <main>
+      <section class="section-intro">
+        <div class="intro-content">
+          <div class="intro-title">
+            <h1>Александр Сухенко</h1>
+            <p class="subtitle">Программист</p>
+          </div>
+          <div class="intro-photo">
+            <img src="img/my_photo.jpg" alt="Александр Сухенко" width="400" height="400">
+          </div>
+        </div>
+      </section>
 
-            <section class="section-about" id="about">
-                <h2>Пара слов обо мне</h2>
-                <div class="about-text">
-                    <p>Привет 👋</p>
-                    <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычислительная техника».</p>
-                    <p>В прошлом году защитил диплом бакалавра на тему «Исследование методов сжатия временных рядов».</p>
-                    <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
-                </div>
-            </section>
+      <section class="section-about" id="about">
+        <h2>Пара слов обо мне</h2>
+        <div class="about-text">
+          <p>Привет 👋</p>
+          <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычислительная техника».</p>
+          <p>В прошлом году защитил диплом бакалавра на тему «Исследование методов сжатия временных рядов».</p>
+          <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
+        </div>
+      </section>
 
-            <section class="section-skills" id="skills">
-                <div class="skills-header">
-                    <h2>Мои навыки</h2>
-                    <div class="skills-sort">
-                        <span>Сортировать:</span>
-                        <button type="button">по названию</button>
-                        <button type="button">по уровню</button>
-                    </div>
-                </div>
-                <dl class="skills-list">
-                    <div class="skill-bar">
-                        <dt>
-                            <img src="img/skill-html.svg" alt="HTML" class="skill-icon"> HTML
-                        </dt>
-                        <dd><div class="skill-fill" style="width: 60%;">60%</div></dd>
-                    </div>
-                    <div class="skill-bar">
-                        <dt>
-                            <img src="img/skill-css.svg" alt="CSS" class="skill-icon"> CSS
-                        </dt>
-                        <dd><div class="skill-fill" style="width: 70%;">70%</div></dd>
-                    </div>
-                    <div class="skill-bar">
-                        <dt>
-                            <img src="img/skill-python.svg" alt="Python" class="skill-icon"> Python
-                        </dt>
-                        <dd><div class="skill-fill" style="width: 80%;">80%</div></dd>
-                    </div>
-                    <div class="skill-bar">
-                        <dt>
-                            <img src="img/skill-c++.svg" alt="C++" class="skill-icon"> C++
-                        </dt>
-                        <dd><div class="skill-fill" style="width: 55%;">55%</div></dd>
-                    </div>
-                </dl>
-            </section>
+      <section class="section-skills" id="skills">
+        <div class="skills-header">
+          <h2>Мои навыки</h2>
+          <div class="skills-sort">
+            <span>Сортировать:</span>
+            <button type="button">по названию</button>
+            <button type="button">по уровню</button>
+          </div>
+        </div>
+        <dl class="skills-list">
+          <dt class="skill-item skill-item_html">
+                        <span class="visually-hidden">HTML</span>HTML
+                    </dt>
+          <dd>
+            <div class="skill-fill" style="width: 60%;">60%</div>
+          </dd>
 
-            <section class="section-interests" id="interests">
-                <h2>Мои интересы</h2>
-                <div class="interests-text">
-                    <p>Наибольший интерес для меня в данный момент представляет программирование 1С и базы данных.</p>
-                    <p>Но помимо учёбы и работы я также люблю ходить в зал и читать зарубежную классику.</p>
-                </div>
-            </section>
+          <dt class="skill-item skill-item_css">
+                        <span class="visually-hidden">CSS</span>CSS
+                    </dt>
+          <dd>
+            <div class="skill-fill" style="width: 70%;">70%</div>
+          </dd>
 
-            <section class="section-contacts" id="contacts">
-                <h2>Мои контакты</h2>
-                <div class="contacts-list">
-                    <div class="contact-item">
-                        <img src="img/ContactsIcon.svg" alt="Телефон" class="contact-icon">
-                        <a href="tel:+79778724795">+7 977 872-47-95</a>
-                    </div>
-                    <div class="contact-item">
-                        <img src="img/ContactsIcon (1).svg" alt="Почта" class="contact-icon">
-                        <a href="mailto:suhaldos@gmail.com">suhaldos@gmail.com</a>
-                    </div>
-                    <ul class="social-list">
-                        <li class="social-item github">
-                            <a href="#"><img src="img/social-github.svg" alt="GitHub"></a>
-                        </li>
-                        <li class="social-item gitlab">
-                            <a href="#"><img src="img/social-gitlab.svg" alt="GitLab"></a>
-                        </li>
-                        <li class="social-item telegram">
-                            <a href="#"><img src="img/social-telegram.svg" alt="Telegram"></a>
-                        </li>
-                        <li class="social-item instagram">
-                            <a href="#"><img src="img/social-instagram.svg" alt="Instagram"></a>
-                        </li>
-                        <li class="social-item vk">
-                            <a href="#"><img src="img/social-vk.svg" alt="VK"></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+          <dt class="skill-item skill-item_python">
+                        <span class="visually-hidden">Python</span>Python
+                    </dt>
+          <dd>
+            <div class="skill-fill" style="width: 80%;">80%</div>
+          </dd>
 
-        <footer class="main-footer">
-            <div class="container">
-                <p>© 2025 Александр Сухенко</p>
-            </div>
-        </footer>
-    </div>
+          <dt class="skill-item skill-item_cpp">
+                        <span class="visually-hidden">C++</span>C++
+                    </dt>
+          <dd>
+            <div class="skill-fill" style="width: 55%;">55%</div>
+          </dd>
+        </dl>
+      </section>
+
+      <section class="section-interests" id="interests">
+        <h2>Мои интересы</h2>
+        <div class="interests-text">
+          <p>Наибольший интерес для меня в данный момент представляет программирование 1С и базы данных.</p>
+          <p>Но помимо учёбы и работы я также люблю ходить в зал и читать зарубежную классику.</p>
+        </div>
+      </section>
+
+      <section class="section-contacts" id="contacts">
+        <h2>Мои контакты</h2>
+        <ul class="contact-list">
+          <li>
+            <a href="tel:+79778724795" class="contact-link contact-link_phone">
+              <span class="visually-hidden">Телефон</span>+7 977 872-47-95
+            </a>
+          </li>
+          <li>
+            <a href="mailto:suhaldos@gmail.com" class="contact-link contact-link_mail">
+              <span class="visually-hidden">Почта</span>suhaldos@gmail.com
+            </a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link social-link_github"><span class="visually-hidden">GitHub</span></a>
+          </li>
+          <li>
+            <a href="#" class="social-link social-link_gitlab"><span class="visually-hidden">GitLab</span></a>
+          </li>
+          <li>
+            <a href="#" class="social-link social-link_instagram"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li>
+            <a href="#" class="social-link social-link_telegram"><span class="visually-hidden">Telegram</span></a>
+          </li>
+          <li>
+            <a href="#" class="social-link social-link_vk"><span class="visually-hidden">VK</span></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 Александр Сухенко</p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
