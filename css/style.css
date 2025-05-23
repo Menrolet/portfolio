@@ -5,7 +5,7 @@
   --border-color: #E0E0E0;
 }
 
-/* Сбросы */
+
 ul, ol {
   margin: 0;
   padding: 0;
@@ -16,7 +16,6 @@ li {
   list-style: none;
 }
 
-/* visually hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -30,14 +29,14 @@ li {
   overflow: hidden;
 }
 
-/* Картинка профиля */
+
 .intro-photo img {
   border-radius: 50%;
   display: block;
   object-fit: cover;
 }
 
-/* Навыки */
+
 .skills-list {
   margin: 0;
   padding: 0;
@@ -75,7 +74,7 @@ li {
   margin-bottom: 12px;
 }
 
-/* Контакты */
+
 .contact-list {
   display: flex;
   gap: 16px;
@@ -110,7 +109,7 @@ li {
   color: var(--green);
 }
 
-/* Соцсети */
+
 .social-list {
   display: flex;
   gap: 12px;
@@ -139,7 +138,7 @@ li {
   border-color: var(--green);
 }
 
-/* Кнопки сортировки */
+
 .skills-sort button {
   padding: 0 18px;
   height: 32px;
@@ -158,7 +157,7 @@ li {
   color: #fff;
 }
 
-/* Прочее оформление */
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
