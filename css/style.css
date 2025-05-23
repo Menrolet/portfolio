@@ -1,0 +1,257 @@
+:root {
+  --txt-color: #212121;
+  --green: #09A494;
+  --bg-color: #fff;
+  --border-color: #E0E0E0;
+}
+
+/* Box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  background: var(--bg-color);
+  color: var(--txt-color);
+}
+
+/* Container */
+.container {
+  min-width: 320px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--txt-color);
+  font-weight: 700;
+}
+h1 {
+  font-size: 60px;  
+  line-height: 1.1;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+/* Main nav */
+.main-nav ul {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.main-nav a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--txt-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.main-nav a:hover {
+  color: var(--green);
+}
+
+/* Intro section */
+.intro-content {
+  display: flex;
+  gap: 36px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.intro-title {
+  flex: 1 1 340px;
+}
+.intro-photo img {
+  border-radius: 8px;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Skills list */
+.skills-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.skill-bar {
+  margin-bottom: 18px;
+}
+.skill-bar dt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.skill-bar dd {
+  margin: 0;
+  padding: 0;
+}
+.skill-icon {
+  width: 25px;
+  height: 25px;
+}
+.skill-fill {
+  height: 18px;
+  background: var(--green);
+  border-radius: 7px;
+  transition: width 0.4s;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  line-height: 18px;
+  padding-left: 8px;
+}
+
+/* Sort buttons */
+.skills-sort button {
+  padding: 0 16px;
+  height: 32px;
+  font-size: 16px;
+  color: var(--green);
+  background: var(--bg-color);
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 0;
+  vertical-align: middle;
+  transition: background 0.2s, color 0.2s;
+}
+.skills-sort button:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+/* Контакты */
+.contacts-list {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--txt-color);
+  font-size: 20px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-decoration: none;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0 14px;
+  height: 40px;
+  transition: border 0.2s, color 0.2s;
+  margin-bottom: 0;
+}
+.contact-item:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+.contact-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Socials */
+.social-list {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.social-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  background: var(--bg-color);
+  transition: background 0.2s, border 0.2s;
+}
+.social-item a:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+.social-item img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+/* Footer */
+.main-footer {
+  color: var(--bg-color);
+  background: var(--txt-color);
+  padding: 18px 0 10px 0;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 48px;
+}
+.main-footer .container {
+  padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+  .intro-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .container {
+      padding: 0 10px;
+  }
+  h1 {
+      font-size: 38px;
+  }
+}
+@media (max-width: 600px) {
+  .main-nav ul {
+      gap: 14px;
+      flex-wrap: wrap;
+  }
+  .intro-photo img {
+      width: 100%;
+      max-width: 200px;
+  }
+  .contacts-list {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
