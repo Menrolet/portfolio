@@ -4,7 +4,6 @@
   font-style: normal;
   src: url("fonts/Montserrat-Regular.woff") format("woff");
 }
-
 @font-face {
   font-weight: 700;
   font-family: "Montserrat";
@@ -12,118 +11,114 @@
   src: url("fonts/Montserrat-Bold.woff") format("woff");
 }
 
+:root {
+  --txt-color: #212121;
+  --bg-color: #fff;
+  --accent1: #c7e4ff;
+  --accent2: #7fc1ff;
+  --accent3: #9779ec;
+  --accent4: #ff994f;
+  --accent5: #f36dff;
+  --accent6: #28d119;
+  --accent7: #19d1cb;
+}
+
 html,
 body {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.43; 
 }
 
 body {
   min-width: 430px;
-  border: 2px dashed #c7e4ff;
+  border: 2px dashed var(--accent1);
 }
+
 
 html::before,
 body::before,
 header::before,
 footer::before,
 main::before {
-  color: #7fc1ff;
+  color: var(--accent2);
 }
-
 main,
 header,
 footer {
   background-color: #f3faff;
-  border: 2px solid #7fc1ff;
+  border: 2px solid var(--accent2);
 }
-
 nav,
 section,
 article,
 aside {
   background-color: #f9f7ff;
-  border: 2px solid #9779ec;
+  border: 2px solid var(--accent3);
 }
-
 nav::before,
 section::before,
 article::before,
 aside::before {
-  color: #9779ec;
+  color: var(--accent3);
 }
-
 h1,
 h2 {
   font-size: 18px;
-  background-color: #ffffff;
-  border: 2px solid #ff994f;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent4);
 }
-
 h1::before {
   content: "h1";
-  color: #ff994f;
+  color: var(--accent4);
 }
-
 h2::before {
   content: "h2";
-  color: #ff994f;
+  color: var(--accent4);
 }
-
 p {
-  background-color: #ffffff;
-  border: 2px solid #f36dff;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent5);
 }
-
 p::before {
-  color: #f36dff;
+  color: var(--accent5);
   content: "p";
 }
-
 dl {
-  background-color: #ffffff;
-  border: 2px solid #28d119;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent6);
 }
-
 dl::before {
-  color: #28d119;
+  color: var(--accent6);
   content: "dl";
 }
-
 dt, dd {
-  background-color: #ffffff;
-  border: 2px solid #19d1cb;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent7);
 }
-
 dt::before {
-  color: #19d1cb;
+  color: var(--accent7);
   content: "dt";
 }
-
 dd::before {
-  color: #19d1cb;
+  color: var(--accent7);
   content: "dd";
 }
-
 ul {
-  background-color: #ffffff;
-  border: 2px solid #28d119;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent6);
 }
-
 ul::before {
-  color: #28d119;
+  color: var(--accent6);
   content: "ul";
 }
-
 li {
-  background-color: #ffffff;
-  border: 2px solid #19d1cb;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent7);
 }
-
 li::before {
-  color: #19d1cb;
+  color: var(--accent7);
   content: "li";
 }
 
@@ -133,53 +128,25 @@ li::before {
   margin: 0;
   border-radius: 4px;
 }
-
 *:not(:last-child) {
   margin-bottom: 20px;
 }
-
 *::before {
   position: absolute;
   top: 8px;
   left: 10px;
   font-weight: 700;
   font-size: 11px;
-  line-height: 10px;
+  line-height: 1; 
   letter-spacing: 0.04em;
 }
 
-html::before {
-  content: "html";
-}
-
-body::before {
-  content: "body";
-}
-
-main::before {
-  content: "main";
-}
-
-header::before {
-  content: "header";
-}
-
-footer::before {
-  content: "footer";
-}
-
-section::before {
-  content: "section";
-}
-
-article::before {
-  content: "article";
-}
-
-aside::before {
-  content: "aside";
-}
-
-nav::before {
-  content: "nav";
-}
+html::before { content: "html"; }
+body::before { content: "body"; }
+main::before { content: "main"; }
+header::before { content: "header"; }
+footer::before { content: "footer"; }
+section::before { content: "section"; }
+article::before { content: "article"; }
+aside::before { content: "aside"; }
+nav::before { content: "nav"; }
