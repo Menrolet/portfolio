@@ -319,7 +319,7 @@ button:hover {
  background-repeat: no-repeat;
  background-size: 30px;
 }
-.skill-level {
+dd.skill-level {
  margin: 4px 0 20px;
  padding: 2px;
  font-size: 0;
