@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -154,17 +158,6 @@ button {
     cursor: pointer;
 }
 
-button {
-  padding: 8px 18px;              
-  border: 2px solid var(--green); 
-  border-radius: 8px;             
-  color: var(--green);           
-  background-color: var(--bg-color); 
-  text-transform: lowercase;      
-  font-size: 20px;               
-  transition: all 0.2s;          
-}
-
 button:hover {
   color: var(--bg-color);         
   background-color: var(--green); 
@@ -271,6 +264,8 @@ button:hover {
 
 .section-contacts {
   margin-bottom: 120px;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 .contact-list {
@@ -286,17 +281,20 @@ button:hover {
 
 }
 
+
+
 .contact-link {
   display: inline-block;
   padding: 8px 14px 8px 42px;
   font-size: 20px;
-  line-height: 1.3;
+  line-height: 1;
   color: var(--txt-color);
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 30px;
   transition: color 0.3s;
+  gap:12px;
 }
 
 .contact-link:hover {
@@ -429,24 +427,37 @@ section {
 }
 
 .section-skills {
-  margin-bottom: 40px; /* Отступ всего блока */
+  max-width: 1240px;
+  margin: 0 auto 40px auto;  /* Центрирование */
 }
 
 .skills-header {
   display: flex;
   justify-content: space-between;
   margin:0; 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .section-skills h2 {
-  margin: 0; /* Обнуляем отступ у заголовка */
+  margin: 0; 
 }
+
+.skills-header h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 
 .skills-sort {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: baseline;            
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  gap:10px;
 }
 
 .skill-list {
@@ -454,3 +465,31 @@ section {
   margin-bottom: 120px;
 }
 
+.skill-sort span{
+  line-height: 1;
+  padding: 0;
+  align-self: baseline; 
+  letter-spacing: 0;
+}
+
+.skills-sort button {
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  gap:20px;
+  line-height: 1;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  color: var(--green);
+  background: var(--bg-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+
+.skills-sort button:last-child {
+  margin-right: 0;
+}
