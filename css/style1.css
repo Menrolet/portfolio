@@ -9,6 +9,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -20,6 +22,10 @@ body {
   line-height: 1.5;
   background: var(--bg-color);
   color: var(--txt-color);
+}
+
+.p{
+ margin: 0; 
 }
 
 .intro-content h1 {
@@ -60,7 +66,7 @@ h3{
     font-family: Open Sans;
     font-weight: 400;
     font-size: 38px;
-    line-height: 0;
+    line-height: 1.2;
     letter-spacing: 0%;
     color: var(--green);
     margin: 0;
@@ -116,7 +122,6 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 10px; /* Добавляем отступы между пунктами */
   font-size: 20px;
 }
 
@@ -411,8 +416,8 @@ section {
 }
 
 .text-wrapper p {
-  margin-bottom: 15px;
-
+  margin-top: 0;
+  margin-bottom: 15px; /* или сколько нужно */
 }
 .text-wrapper p:last-child {
   margin-bottom: 0;
@@ -448,3 +453,4 @@ section {
   margin: 0;
   margin-bottom: 120px;
 }
+
