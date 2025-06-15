@@ -1,514 +1,328 @@
-:root {
-  --txt-color: #212121;
-  --green: #09A494;
-  --bg-color: #fff;
-  --border-color: #E0E0E0;
-
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, p {
-  margin-top: 0;
-}
-
-body {
-  margin: 0;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  background: var(--bg-color);
-  color: var(--txt-color);
-}
-
-.p{
- margin: 0; 
-}
-
-.intro-content h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-h1 {
-    font-family: Open Sans;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 1.1;
-    letter-spacing: 0%;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-h2{
-    font-family: Open Sans;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.2;
-    letter-spacing: 0%;
-    margin:0;
-    margin-bottom: 40px;
-
-}
-
-h3{
-    font-family: Open Sans;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: 0%;
-}
-
-.subtitle {
-    font-family: Open Sans;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 1.2;
-    letter-spacing: 0%;
-    color: var(--green);
-    margin: 0;
-}
-
-a{
-    font-family: Open Sans;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: 0%;
-    text-align: center;
-
-}
-
-
-footer {
-    color: var(--bg-color);
-    background-color: var(--txt-color);
-}
-
-.container {
-    min-width: 320px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-.main-header {
-  display: flex;
-  padding-top: 60px;
-  margin:0;
-  gap: 40px;
-  align-items: center;
-  margin:0;
-  margin-bottom: 120px;
-}
-
-.main-logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px; 
-}
-
-.main-nav {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-nav ul {
-  display: flex; /* Добавляем flex для меню */
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 20px;
-}
-
-.main-nav li {
-  margin-right: 0; /* Убираем старые отступы */
-}
-
-.main-nav li:last-child {
-  margin-right: 0; 
-}
-
-.main-nav a {
-  display: block; /* Меняем inline-block на block */
-  padding: 10px 15px;
-  color: var(--txt-color);
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: var(--green);
-}
-
-button {
-    padding: 0;
-    border: none;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-button:hover {
-  color: var(--bg-color);         
-  background-color: var(--green); 
-  transition: 0.3s ease;
-}
-
-.skills-sort button {
-  padding-top: 6px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-left: 10px;              
-  margin-right: 10px;              
-  margin-top: 6px;
-  margin-bottom: 10px;
-}
-
-.social-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: baseline;
-}
-
-.social-list li {
- display: inline-block;
- margin: 0;
- padding: 0;
-}
-
-.visually-hidden {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- white-space: nowrap;
- clip-path: inset(100%);
- clip: rect(0 0 0 0);
- overflow: hidden;
-}
-
-.social-list {
-  margin: 20px 0 0 0;
-  padding: 0;
-}
-
-.social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.social-link {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid var(--green);
-  background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 25px 25px;
-  transition: background 0.2s, border 0.2s;
-  line-height: 1;
-  gap:10px;
-}
-
-.social-link:hover {
-  background-color: var(--green);
-  border-color: var(--green);
-}
-
-.social-link_github {
-    background-image: url("../img/social-github.svg");
-}
-
-.social-link_gitlab {
-    background-image: url("../img/social-gitlab.svg");
-}
-
-.social-link_telegram {
-    background-image: url("../img/social-telegram.svg");
-}
-
-.social-link_instagram {
-    background-image: url("../img/social-instagram.svg");
-}
-
-.social-link_vk {
-    background-image: url("../img/social-vk.svg");
-}
-
-.main-footer {
-  width: 100%;
-  color: var(--bg-color);
-  background: var(--txt-color);
-  padding-top:50px;
-  padding-bottom: 50px;
-  text-align: left;
-  font-size: 20px;
-}
-
-
-.section-contacts {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 120px;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-
-.contact-list {
-  margin: 0;
-  padding: 0px;
-  list-style: none;
-  display: flex;
-  align-items: baseline;
-  gap: ;
-}
-
-.contact-list li {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  max-width: 420px;
-}
-
-
-
-
-.contact-link {
-  display: inline-block;
-  padding: 8px 14px 8px 42px;
-  font-size: 20px;
-  line-height: 1;
-  color: var(--txt-color);
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  background-size: 30px;
-  transition: color 0.3s;
-}
-
-.contact-link:hover {
-  color: var(--green);
-}
-
-.contact-link_phone {
-  background-image: url("../img/ContactsIcon.svg");
-}
-
-.contact-link_mail {
-  background-image: url("../img/ContactsIcon (1).svg");
-}
-
-.contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin:0;
-  gap: 40px; /* Отступ между блоками контактов */
-}
-
-
-
-
-
-.intro-photo img {
-  border-radius: 50%;
-}
-
-.intro-photo {
-  width: 400px; 
-  height: 400px; 
-}
-
-.intro-content {
-  display: flex;
-  justify-content: space-between; /* Текст слева, фото справа */
-  align-items: center;
-  gap: 70px;
-  width: 100%; /* На всю ширину контейнера */
-}
-
-.intro-text {
-  flex: 1;
-  max-width: calc(100% - 470px);
-}
-
-.intro-content h1 {
-  margin: 0;
-  margin-bottom: 40px; /* Отступ между заголовком и подзаголовком, но я не пойму почему на макете показывает 20px ведь там визуально явно больше */
-}
-
-.intro-photo {
-  flex-shrink: 0; /* Запрещаем сжатие фото */
-}
-
-.intro-content p {
-  margin: 0;
-}
-
-
-
-.skill-list {
- margin: 0;
- padding: 0;
- line-height: 1;
-}
-
-.skill-list dt {
- margin-bottom: 6px;
- padding: 5px 0 5px 38px;
- background-position: left;
- background-repeat: no-repeat;
- background-size: 30px;
-}
-dd.skill-level {
- margin: 4px 0 20px;
- padding: 2px;
- font-size: 0;
- border: 1px solid var(--txt-color);
- border-radius: 16px;
-
-}
-.skill-level div {
- height: 14px;
- background-color: var(--green);
- border-radius: 8px;
-}
-.skill-item {
- text-transform: lowercase;
- background-repeat: no-repeat;
-}
-
-.skill-item_html {
-    background-image: url("../img/skill-html.svg");
-    
-}
-
-.skill-item_css {
-    background-image: url("../img/skill-css.svg");
-}
-
-.skill-item_python {
-    background-image: url("../img/skill-python.svg");
-}
-
-.skill-item_cpp {
-    background-image: url("../img/skill-c++.svg");
-}
-
-.skill-list dd{
-  margin: 0 0 20px 0;
-}
-
-section {
-  margin-bottom: 120px; /* Отступ между секциями */
-}
-
-.text-wrapper p {
-  margin-top: 0;
-  margin-bottom: 15px; /* или сколько нужно */
-}
-.text-wrapper p:last-child {
-  margin-bottom: 0;
-}
-
-.text-wrapper {
-  max-width: 800px; /* Фиксированная ширина по макету */
-  margin: 0;
-}
-
-.section-skills {
-  margin: 0;
-  padding: 0;
-  max-width: 1240px;
-  margin: 0 auto 40px auto;  /* Центрирование */
-}
-
-.skills-header {
-  gap:0;
-  margin:0; 
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.section-skills h2 {
-  margin: 0; 
-}
-
-.skills-header h2 {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-
-.skills-sort {
-  display: flex;
-  align-items: baseline;            
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0;
-  gap:0px;
-}
-
-.skill-list { 
-  margin: 0;
-  margin-bottom: 120px;
-}
-
-.skills-sort span{
-  margin:0;
-  padding: 0;
-  line-height: 1.5;
-  font-size: 20px;
-  letter-spacing: 0;
-}
-
-.skills-sort button {
-  padding-top: 6px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  line-height: 1;
-  border: 1px solid var(--green);
-  border-radius: 8px;
-  color: var(--green);
-  background: var(--bg-color);
-  font-size: 20px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-
-
-.skills-sort button:hover {
-  color: var(--bg-color);
-  background-color: var(--green);
-  border-color: var(--green);
-  transition: background 0.2s, color 0.2s;
-}
-
-.skills-sort button:last-child {
-  margin-right: 0;
-}
+  :root{
+      --txt-color: #212121;
+      --green: #09A494;
+      --bg-color: #FFFFFF;
+  }
+
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--txt-color);
+      background-color: var(--bg-color);
+  }
+
+  h1 {
+      font-weight: 700;
+      font-size: 60px;
+      margin: 0;
+      margin-bottom: 20px;
+  }
+
+  h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0;
+      margin-bottom: 40px;
+  }
+
+  h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+  }
+
+  button a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+  }
+
+  .subtitle {
+      margin: 0;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 1.2;
+      color: var(--green);
+      margin-top: -10px;
+      padding-bottom: 11px;
+  }
+
+  footer {
+      color: var(--bg-color);
+      background-color: var(--txt-color);
+  }
+
+  .container {
+      min-width: 320px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  .main-nav a{
+      padding: 10px 15px 10px 15px;
+      color:var(--txt-color);
+      text-decoration:none;
+  }
+  .main-nav a:hover {
+      color: var(--green)
+  }
+
+  button {
+      padding: 6px 10px 6px 10px;
+      border: 1px solid var(--green);
+      border-radius: 8px;
+      color: var(--txt-color);
+      background-color: var(--bg-color);
+      cursor: pointer;
+      text-transform:lowercase;
+  }
+
+  button:hover {
+      background-color: var(--green);
+      color: var(--bg-color);
+  }
+
+  .social {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      gap: 20px;
+  }
+  .social li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+  }
+
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+  }
+
+  .social-link {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--green);
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+  }
+
+  .social-link:hover{
+      background-color: var(--green);
+  }
+
+  .social-link_github{
+      background-image: url(../img/github.svg);
+  }
+
+  .social-link_gitlab{
+      background-image: url(../img/gitlab.svg);
+  }
+
+  .social-link_vk{
+      background-image: url(../img/vk.svg);
+  }
+
+  .social-link_instagram{
+      background-image: url(../img/instagram.svg);
+  }
+
+  .social-link_telegram{
+      background-image: url(../img/telegram.svg);
+  }
+
+  .contact {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 40px;
+      gap: 40px;
+  }
+
+  .contact-link{
+      display: block;
+      background-repeat: no-repeat;
+      background-position: 0px;
+      text-decoration:none;
+      padding-left: 42px;
+      color: var(--txt-color);
+  }
+
+  .contact-link:hover{
+      color: var(--green);
+  }
+
+  .contact-link_phone{
+      background-image: url(../img/phone.svg);
+  }
+
+  .contact-link_email{
+      background-image: url(../img/email.svg);
+  }
+
+  ul{
+      margin: 0;
+      padding: 0;
+  }
+
+  li{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+  }
+
+  .section-intro img {
+      border-radius: 50%;
+  }
+
+  .skill-list {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+  }
+
+
+  .skill-list dt {
+      margin-bottom: 6px;
+      padding: 5px 0 5px 38px;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 30px;
+  }
+
+
+  .skill-level {
+      margin: 4px 0 18px;
+      padding: 2px;
+      font-size: 0;
+      border: 1px solid var(--txt-color);
+      border-radius: 16px;
+  }
+
+  .skill-level:last-child {
+      margin: 0;
+  }
+
+
+  .skill-level div {
+      height: 14px;
+      background-color: var(--green);
+      border-radius: 8px;
+  }
+
+
+  .skill-item {
+      text-transform: lowercase;
+  }
+
+
+  .skill-item_html {
+      background-image: url("../img/html.svg");
+  }
+
+
+  .skill-item_css {
+      background-image: url("../img/css.svg");
+  }
+
+
+  .skill-item_cpp {
+      background-image: url("../img/c++.svg");
+  }
+
+
+  .skill-item_c {
+      background-image: url("../img/c.svg");
+  }
+
+  .main-header {
+      display: flex;
+      padding-top: 60px;
+      gap: 40px;
+      align-items: center;
+  }
+
+  nav {
+      display: flex;
+  }
+
+  .section-intro {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 70px;
+  }
+
+  .section-intro div {
+      display: flex;
+      flex-direction:column;
+      flex-grow: 1;
+      justify-content: center;
+  }
+
+  .text-wrapper {
+      max-width: 800px;
+  }
+
+  p {
+      margin: 0;
+      margin-bottom: 15px;
+  }
+
+  p:last-child {
+      margin-bottom: 0;
+  }
+
+  .skills-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      gap: 20px;
+  }
+
+  .skills-header div {
+      display: flex;
+      margin: 0;
+      gap: 20px;
+  }
+
+  .skills-header p {
+      margin: 0;
+      padding-top: 3px;
+  }
+
+  .skills-header h2 {
+      margin: 0;
+  }
+
+  .main-footer{
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  section, .main-header {
+      padding-bottom: 120px;
+  }
