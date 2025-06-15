@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +7,32 @@
   <meta name="author" content="Александр Сухенко">
   <meta name="keywords" content="портфолио, Александр Сухенко, программист, HTML, CSS, Python, 1С, база данных">
   <title>Портфолио — Сухенко Александр</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style1.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="icon" type="image/png" href="img/main-logo.png">
 </head>
-
 <body>
   <div class="container">
     <header class="main-header">
-        <img src="img/main-logo.svg" alt="Александр Сухенко" width="60" height="60">
+      <img src="img/main-logo.svg" alt="Александр Сухенко" width="60" height="60">
       <nav class="main-nav">
-        <ul>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#skills">Навыки</a></li>
-          <li><a href="#interests">Интересы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#interests">Интересы</a>
+        <a href="#contacts">Контакты</a>
       </nav>
     </header>
 
     <main>
       <section class="section-intro">
-        <div class="intro-content">
-          <div class="intro-title">
-            <h1>Александр Сухенко</h1>
-            <p class="subtitle">Программист</p>
-          </div>
-          <div class="intro-photo">
-            <img src="img/my_photo.jpg" alt="Александр Сухенко" width="400" height="400">
-          </div>
+        <div>
+          <h1>Александр Сухенко</h1>
+          <p class="subtitle">Программист</p>
         </div>
+        <img src="img/my_photo.jpg" alt="Александр Сухенко" width="400" height="400">
       </section>
 
       <section class="section-about" id="about">
@@ -55,30 +48,22 @@
       <section class="section-skills" id="skills">
         <div class="skills-header">
           <h2>Мои навыки</h2>
-          <div class="skills-sort">
-            <span>Сортировать:</span>
-            <button type="button">по названию</button>
-            <button type="button">по уровню</button>
+          <div>
+            <p>Сортировать</p>
+            <button>по названию</button>
+            <button>по уровню</button>
           </div>
         </div>
         <dl class="skill-list">
           <dt class="skill-item skill-item_html">html</dt>
-          <dd class="skill-level">
-            <div style="width: 60%;">60%</div>
-          </dd>
+          <dd class="skill-level"><div style="width: 60%;">60%</div></dd>
           <dt class="skill-item skill-item_css">css</dt>
-          <dd class="skill-level">
-            <div style="width: 70%;">70%</div>
-          </dd>
+          <dd class="skill-level"><div style="width: 70%;">70%</div></dd>
           <dt class="skill-item skill-item_python">python</dt>
-          <dd class="skill-level">
-            <div style="width: 80%;">80%</div>
-          </dd>
+          <dd class="skill-level"><div style="width: 80%;">80%</div></dd>
           <dt class="skill-item skill-item_cpp">c++</dt>
-          <dd class="skill-level">
-            <div style="width: 55%;">55%</div>
-          </dd>
-        </dl>      
+          <dd class="skill-level"><div style="width: 55%;">55%</div></dd>
+        </dl>
       </section>
 
       <section class="section-interests" id="interests">
@@ -91,20 +76,19 @@
 
       <section class="section-contacts" id="contacts">
         <h2>Мои контакты</h2>
-        <div class="contacts-wrapper">
-        <ul class="contact-list">
+        <ul class="contact">
           <li>
             <a href="tel:+79778724795" class="contact-link contact-link_phone">
               <span class="visually-hidden">Телефон</span>+7 977 872-47-95
             </a>
           </li>
           <li>
-            <a href="mailto:suhaldos@gmail.com" class="contact-link contact-link_mail">
+            <a href="mailto:suhaldos@gmail.com" class="contact-link contact-link_email">
               <span class="visually-hidden">Почта</span>suhaldos@gmail.com
             </a>
           </li>
         </ul>
-        <ul class="social-list">
+        <ul class="social">
           <li>
             <a href="#" class="social-link social-link_github"><span class="visually-hidden">GitHub</span></a>
           </li>
@@ -121,7 +105,6 @@
             <a href="#" class="social-link social-link_vk"><span class="visually-hidden">VK</span></a>
           </li>
         </ul>
-        </div>
       </section>
     </main>
   </div>
@@ -130,7 +113,5 @@
       <p>© 2025 Александр Сухенко</p>
     </div>
   </footer>
-  
 </body>
-
 </html>
