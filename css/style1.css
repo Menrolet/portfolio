@@ -134,23 +134,23 @@
   }
 
   .social-link_github{
-      background-image: url(../img/github.svg);
+      background-image: url(../img/social-github.svg);
   }
 
   .social-link_gitlab{
-      background-image: url(../img/gitlab.svg);
+      background-image: url(../img/social-gitlab.svg);
   }
 
   .social-link_vk{
-      background-image: url(../img/vk.svg);
+      background-image: url(../img/social-vk.svg);
   }
 
   .social-link_instagram{
-      background-image: url(../img/instagram.svg);
+      background-image: url(../img/social-instagram.svg);
   }
 
   .social-link_telegram{
-      background-image: url(../img/telegram.svg);
+      background-image: url(../img/social-telegram.svg);
   }
 
   .contact {
@@ -250,6 +250,10 @@
 
   .skill-item_cpp {
       background-image: url("../img/c++.svg");
+  }
+
+  .skill-item_python {
+      background-image: url("../img/python.svg");
   }
 
 
