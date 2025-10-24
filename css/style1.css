@@ -455,12 +455,21 @@
           height: 40px;
       }
 
-      .nav-btn {
-          display: block;
-          width: 30px;
-          height: 30px;
-          border: 0px;
-      }
+        .nav-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;                 /* убрать рамку */
+        background-color: transparent; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px 24px; /* чтобы svg нормально влезал */
+        padding: 0;
+        }
+        .nav-btn:hover {
+        background-color: transparent; /* не закрашивать при hover */
+        color: inherit;
+        }
 
       .nav-btn_close {
           background-image: url("../img/close.svg");
@@ -555,7 +564,11 @@
       .section-interests {
           padding-bottom: 50px;
       }
-  }
+
+      .main-nav_closed {
+      display: none;
+    }
+  } 
 @media screen and (max-width: 410px){
     ul.contact {
           flex-direction: row;

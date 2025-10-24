@@ -65,3 +65,38 @@ sortBlock.addEventListener("click", (e) => {
       break;
   }
 });
+
+// Получаем элементы
+const nav = document.querySelector(".main-nav");
+const navBtn = document.querySelector(".nav-btn");
+
+console.log(nav, navBtn);
+
+// создаём объект menu
+const menu = {
+  open() {
+    nav.classList.remove("main-nav_closed");
+    navBtn.classList.remove("nav-btn_open");
+    navBtn.classList.add("nav-btn_close");
+    navBtn.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+  },
+
+  close() {
+    nav.classList.add("main-nav_closed");
+    navBtn.classList.remove("nav-btn_close");
+    navBtn.classList.add("nav-btn_open");
+    navBtn.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+  }
+};
+
+// скрываем меню при загрузке скрипта
+menu.close();
+
+// обработчик события click на кнопке
+navBtn.addEventListener("click", (e) => {
+  if (nav.classList.contains("main-nav_closed")) {
+    menu.open();
+  } else {
+    menu.close();
+  }
+});
