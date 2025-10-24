@@ -13,7 +13,7 @@ const skills = {
       const dt = document.createElement("dt");
       dt.classList.add("skill-item");
       dt.textContent = skill.name;
-      dt.style.backgroundImage = `url(/img/${skill.icon})`;
+      dt.style.backgroundImage = `url(img/${skill.icon})`;
 
       const dd = document.createElement("dd");
       dd.classList.add("skill-level");
