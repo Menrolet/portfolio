@@ -52,18 +52,11 @@ const skillList = document.querySelector("dl.skill-list");
 skills.generateList(skillList);
 
 // делегирование событий
-const sortBlock = document.querySelector(".skills-header div");
+const sortBlock = document.querySelector(".skills-sort");
 sortBlock.addEventListener("click", (e) => {
   if (e.target.nodeName !== "BUTTON") return;
-  const text = e.target.textContent.trim();
-  switch (text) {
-    case "по названию":
-      skills.sortList("name");
-      break;
-    case "по уровню":
-      skills.sortList("level");
-      break;
-  }
+  const type = e.target.dataset.sort;   // "name" | "level"
+  skills.sortList(type);
 });
 
 // Получаем элементы
