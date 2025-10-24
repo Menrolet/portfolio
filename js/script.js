@@ -23,8 +23,7 @@ const skills = {
       div.textContent = `${skill.level}%`;
 
       dd.appendChild(div);
-      parentElement.appendChild(dt);
-      parentElement.appendChild(dd);
+      parentElement.append(dt, dd);
     });
   }
 };
