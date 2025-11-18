@@ -19,6 +19,15 @@
       color: var(--txt-color);
       background-color: var(--bg-color);
   }
+  .dark-theme {
+      --txt-color: #CCCCCC;
+      --bg-color: #031923;
+  }
+    .dark-theme .social-link {
+        background-color: #CCCCCC;   
+        border-color: #CCCCCC;       
+    }
+    
 
   h1 {
       font-weight: 700;
@@ -185,6 +194,13 @@
   .contact-link_email {
       background-image: url(../img/email.svg);
   }
+
+  .dark-theme .contact-link_phone {
+      background-image: url(../img/icon=phone_dark.svg);
+  }
+    .dark-theme .contact-link_email {
+        background-image: url(../img/icon=email_dark.svg);
+    }
 
   ul {
       margin: 0;
