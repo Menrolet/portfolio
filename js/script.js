@@ -93,3 +93,27 @@ navBtn.addEventListener("click", (e) => {
     menu.close();
   }
 });
+
+const themeSwitch = document.querySelector('.switch-checkbox');
+
+// при загрузке страницы
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'light') {
+    document.body.classList.remove('dark-theme');
+    themeSwitch.checked = true;
+} else {
+    document.body.classList.add('dark-theme');
+    themeSwitch.checked = false;
+}
+
+// при переключении
+themeSwitch.addEventListener('change', function () {
+    if (themeSwitch.checked) {
+        document.body.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+    }
+});
